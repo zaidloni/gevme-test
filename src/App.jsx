@@ -9,7 +9,7 @@ const App = () => {
   // function to handle the submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (firstName && lastName && email) {
+    if (firstName && lastName && email && email.includes("@")) {
       const obj = {
         firstName: firstName,
         lastName: lastName,
@@ -18,8 +18,8 @@ const App = () => {
       };
       setSubmissionCount((prev) => prev + 1);
       setTableData((prev) => [...prev, obj]);
-    }else{
-      alert("Please enter all the values first")
+    } else {
+      alert("Please enter all the values Properlyq");
     }
   };
   return (
