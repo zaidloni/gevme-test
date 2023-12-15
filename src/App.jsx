@@ -53,7 +53,7 @@ const App = () => {
           Submit
         </button>
       </form>
-      {tableData && (
+      {tableData.length > 0 && (
         <table className="border border-black mt-4  w-[90vw] mx-auto">
           <thead>
             <tr className="h-14 border border-black">
